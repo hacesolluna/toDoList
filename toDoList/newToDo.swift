@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct newToDo: View {
+    @Binding var toDoItems: [toDoItem]
+    @Binding var showNewTask: Bool
     @State var title: String
     @State var isImportant: Bool
     
@@ -27,7 +29,8 @@ struct newToDo: View {
                         }
             .padding()
             Button(action:{
-                
+                self.addTask(title: self.title, isImportant: self.isImportant)
+                self.showNewTask = false
             }){
                 Text("Add")
                 .font(.title)
@@ -35,9 +38,19 @@ struct newToDo: View {
             .padding()
         }
     }
+    private func addTask(title: String, isImportant: Bool = false) {
+            
+            let task = toDoItem(title: title, isImportant: isImportant)
+            toDoItems.append(task)
+        }
 }
 
 struct newToDo_Previews: PreviewProvider {
+ 
     static var previews: some View {
-        newToDo(title: "", isImportant: false)    }
+        newToDo(toDoItems: .constant([]), showNewTask: .constant(true), title: "", isImportant: false)
+    }
+  
+   
+    
 }
