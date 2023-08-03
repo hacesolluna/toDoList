@@ -15,29 +15,33 @@ struct newToDo: View {
     @State var isImportant: Bool
     
     var body: some View {
-        VStack{
-            
-            Text("Task title:")
-                .font(.title)
-                .fontWeight(.bold)
-            TextField("Enter the task description...", text: $title)
-              .padding()
-                .background(Color(.systemGroupedBackground))
-                .cornerRadius(15)
-               .padding()
-            Toggle(isOn: $isImportant) {
-                            Text("Is it important?")
-                        }
-            .padding()
-            Button(action:{
-                self.addTask(title: self.title, isImportant: self.isImportant)
-                self.showNewTask = false
-            }){
-                Text("Add")
-                .font(.title)
+        ZStack{
+            Color(red: 255/255, green: 170/255, blue: 196/255)
+                .ignoresSafeArea()
+            VStack{
+                Text("Task title:")
+                    .font(.title)
+                    .fontWeight(.bold)
+                TextField("Enter the task description...", text: $title)
+                    .padding()
+                    .background(Color(.systemGroupedBackground))
+                    .cornerRadius(15)
+                    .padding()
+                Toggle(isOn: $isImportant) {
+                    Text("Is it important?")
+                }
+                .padding()
+                Button(action:{
+                    self.addTask(title: self.title, isImportant: self.isImportant)
+                    self.showNewTask = false
+                }){
+                    Text("Add")
+                        .font(.title)
+                }
+                .padding()
             }
-            .padding()
         }
+        
     }
     private func addTask(title: String, isImportant: Bool = false) {
         let task = ToDo(context: context)

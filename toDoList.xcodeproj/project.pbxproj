@@ -15,6 +15,7 @@
 		455323CD2A797E9B00374AA0 /* newToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455323CC2A797E9B00374AA0 /* newToDo.swift */; };
 		455323F12A7AD11E00374AA0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455323F02A7AD11E00374AA0 /* Persistence.swift */; };
 		455323F72A7AD3D400374AA0 /* toDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 455323F52A7AD3D400374AA0 /* toDoList.xcdatamodeld */; };
+		45797A342A7C2FFE00E2391F /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45797A332A7C2FFE00E2391F /* Resources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		455323CC2A797E9B00374AA0 /* newToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newToDo.swift; sourceTree = "<group>"; };
 		455323F02A7AD11E00374AA0 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		455323F62A7AD3D400374AA0 /* toDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = toDoList.xcdatamodel; sourceTree = "<group>"; };
+		45797A332A7C2FFE00E2391F /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				455323C82A797BBA00374AA0 /* listItem.swift */,
 				455323BC2A797AC600374AA0 /* ContentView.swift */,
 				455323F02A7AD11E00374AA0 /* Persistence.swift */,
+				45797A332A7C2FFE00E2391F /* Resources.swift */,
 				455323CC2A797E9B00374AA0 /* newToDo.swift */,
 				455323BE2A797AC800374AA0 /* Assets.xcassets */,
 				455323C02A797AC800374AA0 /* Preview Content */,
@@ -151,6 +154,7 @@
 			files = (
 				455323CD2A797E9B00374AA0 /* newToDo.swift in Sources */,
 				455323F72A7AD3D400374AA0 /* toDoList.xcdatamodeld in Sources */,
+				45797A342A7C2FFE00E2391F /* Resources.swift in Sources */,
 				455323BD2A797AC600374AA0 /* ContentView.swift in Sources */,
 				455323BB2A797AC600374AA0 /* toDoListApp.swift in Sources */,
 				455323C92A797BBA00374AA0 /* listItem.swift in Sources */,

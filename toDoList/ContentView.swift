@@ -15,21 +15,25 @@ struct ContentView: View {
         
     var toDoItems: FetchedResults<ToDo>
     var body: some View {
-        VStack{
-            HStack{
-                Text("To Do List")
-                     .font(.system(size: 40))
-                     .fontWeight(.black)
-                Spacer()
-                Button(action: {
-                    self.showNewTask = true
-                }) {
-                Text("+")
+        ZStack{
+            Color(red: 248/255, green: 189/255, blue: 196/255)
+                .ignoresSafeArea()
+            VStack{
+                HStack{
+                    Text("To Do List")
                         .font(.system(size: 40))
+                        .fontWeight(.black)
+                    Spacer()
+                    Button(action: {
+                        self.showNewTask = true
+                    }) {
+                        Text("+")
+                            .font(.system(size: 40))
+                    }
                 }
+                .padding()
+                Spacer()
             }
-            .padding()
-            Spacer()
         }
         List {
             
