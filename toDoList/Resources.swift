@@ -19,21 +19,7 @@ struct Resources: View {
                     .fontDesign(.rounded)
                 Spacer()
                 ScrollView {
-                    HStack{
-                        Link("Insight Timer is a free mindfulness and meditation app helping the users with sleep, anxiety, and stress. ",
-                              destination: URL(string: "https://insighttimer.com/")!)
-                        .padding(.vertical, 10)
-                        .padding(.leading, 20)
-                        .foregroundColor(.black)
-                        .fontDesign(.rounded)
-                        Image("insighttimer")
-                            .resizable(resizingMode: .stretch)
-                            .aspectRatio(contentMode: .fit)
-                            .padding(20)
-                    }
-                    .background(.white)
-                    .cornerRadius(20)
-                    .padding(.bottom, 15)
+                   
                     
                     HStack{
                         Link("Enjoy 10 minutes of meditation with this video! ",
@@ -61,7 +47,8 @@ struct Resources: View {
                         Image("resource3")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
-                            .padding(20)
+                            .padding(10)
+                            .padding(.top, 7)
                     }
                     .background(.white)
                     .cornerRadius(20)
@@ -75,6 +62,23 @@ struct Resources: View {
                                 .foregroundColor(.black)
                                 .fontDesign(.rounded)
                         Image("resource4")
+                            .resizable(resizingMode: .stretch)
+                            .aspectRatio(contentMode: .fit)
+                            .padding([.top, .bottom, .trailing], 20.0)
+                            .padding(.leading, 10)
+                    }
+                    .background(.white)
+                    .cornerRadius(20)
+                    .padding(.bottom, 15)
+                    
+                    HStack{
+                        Link("Insight Timer is a free mindfulness and meditation app helping the users with sleep, anxiety, and stress. ",
+                              destination: URL(string: "https://insighttimer.com/")!)
+                        .padding(.vertical, 10)
+                        .padding(.leading, 20)
+                        .foregroundColor(.black)
+                        .fontDesign(.rounded)
+                        Image("insighttimer")
                             .resizable(resizingMode: .stretch)
                             .aspectRatio(contentMode: .fit)
                             .padding(20)

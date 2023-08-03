@@ -19,40 +19,49 @@ struct ContentView: View {
             Color(red: 248/255, green: 189/255, blue: 196/255)
                 .ignoresSafeArea()
             VStack{
-                HStack{
-                    Text("To Do List")
-                        .font(.system(size: 40))
-                        .fontWeight(.black)
-                    Spacer()
-                    Button(action: {
-                        self.showNewTask = true
-                    }) {
-                        Text("+")
+                VStack{
+                    HStack{
+                        Text("To Do List")
                             .font(.system(size: 40))
+                            .fontWeight(.black)
+                            .fontDesign(.rounded)
+                        Spacer()
+                        Button(action: {
+                            self.showNewTask = true
+                        }) {
+                            Text("+")
+                                .font(.system(size: 40))
+                        }
                     }
+                    .padding()
                 }
-                .padding()
-                Spacer()
-            }
-        }
-        List {
-            
+                
+                List {
+                    
                     ForEach (toDoItems) { toDoItem in
                         if toDoItem.isImportant == true {
-                         Text("‼️" + (toDoItem.title ?? "No title"))
+                            Text("‼️" + (toDoItem.title ?? "No title"))
+                                .fontDesign(.rounded)
                         } else {
-                             Text(toDoItem.title ?? "No title")
+                            Text(toDoItem.title ?? "No title")
+                                .fontDesign(.rounded)
                         }
-                        }
-                        .onDelete(perform: deleteTask)
-            
-        }
-        .listStyle(.plain)
-        .animation(.easeOut, value: showNewTask)
-        
-        if showNewTask {
-          newToDo(showNewTask: $showNewTask, title: "", isImportant: false)
+                    }
+                    .onDelete(perform: deleteTask)
+                    
                 }
+                .listStyle(InsetGroupedListStyle())
+                .scrollContentBackground(.hidden)
+                .background(Color(red: 248/255, green: 189/255, blue: 196/255))
+                .listStyle(.plain)
+                .animation(.easeOut, value: showNewTask)
+                
+                
+                if showNewTask {
+                    newToDo(showNewTask: $showNewTask, title: "", isImportant: false)
+                }
+            }
+        }
     }
     private func deleteTask(offsets: IndexSet) {
             withAnimation {

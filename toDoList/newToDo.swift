@@ -16,9 +16,10 @@ struct newToDo: View {
     
     var body: some View {
         ZStack{
-            Color(red: 255/255, green: 170/255, blue: 196/255)
+            Color(red: 248/255, green: 189/255, blue: 196/255)
                 .ignoresSafeArea()
             VStack{
+                Spacer()
                 Text("Task title:")
                     .font(.title)
                     .fontWeight(.bold)
