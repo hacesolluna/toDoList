@@ -15,8 +15,11 @@ struct Resources: View {
             VStack(spacing: 10.0) {
                 Text("Resources")
                     .font(.system(size: 40))
-                    .fontWeight(.black)
                     .fontDesign(.rounded)
+                    .fontWeight(.black)
+                    .foregroundColor(Color(red: 0.252, green: 0.404, blue: 0.354))
+                    .multilineTextAlignment(.leading)
+                    .shadow(color: .white, radius: 1.5, x: 1, y: 1)
                 Spacer()
                 ScrollView {
                    

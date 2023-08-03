@@ -23,6 +23,7 @@ struct newToDo: View {
                 Text("Task title:")
                     .font(.title)
                     .fontWeight(.bold)
+                    .fontDesign(.rounded)
                 TextField("Enter the task description...", text: $title)
                     .padding()
                     .background(Color(.systemGroupedBackground))
