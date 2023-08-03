@@ -63,6 +63,8 @@ struct ContentView: View {
                 
                 if showNewTask {
                     newToDo(showNewTask: $showNewTask, title: "", isImportant: false)
+                    
+                    
                 }
             }
         }
@@ -85,3 +87,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
+
