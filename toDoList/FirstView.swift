@@ -41,8 +41,16 @@ struct FirstView: View {
                      Text("Test")
                      }*/
                 }
-                SwiftUIView()
-                
+                VStack{
+                    SwiftUIView()
+                        .padding(.top, 140)
+                        .padding(.bottom,30)
+                    Image("flowerbloom")
+                        .resizable(resizingMode: .stretch)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 200.0)
+                        .cornerRadius(15)
+                }
             }
             
         }

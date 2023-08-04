@@ -36,7 +36,7 @@ struct Resources: View {
                             .aspectRatio(contentMode: .fit)
                             .padding()
                     }
-                    .background(.white)
+                    .background(Color(hue: 0.404, saturation: 0.047, brightness: 0.944))
                     .cornerRadius(20)
                     .padding(.bottom, 15)
                     
@@ -53,7 +53,7 @@ struct Resources: View {
                             .padding(10)
                             .padding(.top, 7)
                     }
-                    .background(.white)
+                    .background(Color(hue: 0.404, saturation: 0.047, brightness: 0.944))
                     .cornerRadius(20)
                     .padding(.bottom, 15)
                     
@@ -70,7 +70,7 @@ struct Resources: View {
                             .padding([.top, .bottom, .trailing], 20.0)
                             .padding(.leading, 10)
                     }
-                    .background(.white)
+                    .background(Color(hue: 0.404, saturation: 0.047, brightness: 0.944))
                     .cornerRadius(20)
                     .padding(.bottom, 15)
                     
@@ -86,7 +86,7 @@ struct Resources: View {
                             .aspectRatio(contentMode: .fit)
                             .padding(20)
                     }
-                    .background(.white)
+                    .background(Color(hue: 0.404, saturation: 0.047, brightness: 0.944))
                     .cornerRadius(20)
                     .padding(.bottom, 15)
                     
@@ -102,7 +102,7 @@ struct Resources: View {
                             .aspectRatio(contentMode: .fit)
                             .padding(20)
                     }
-                    .background(.white)
+                    .background(Color(hue: 0.404, saturation: 0.047, brightness: 0.944))
                     .cornerRadius(20)
                     .padding(.bottom, 15)
                     
@@ -119,7 +119,7 @@ struct Resources: View {
                             .aspectRatio(contentMode: .fit)
                             .padding(20)
                     }
-                    .background(.white)
+                    .background(Color(hue: 0.404, saturation: 0.047, brightness: 0.944))
                     .cornerRadius(20)
                     .padding(.bottom, 15)
                     
@@ -135,7 +135,7 @@ struct Resources: View {
                             .aspectRatio(contentMode: .fit)
                             .padding()
                     }
-                    .background(.white)
+                    .background(Color(hue: 0.404, saturation: 0.047, brightness: 0.944))
                     .cornerRadius(20)
                     
                 }
