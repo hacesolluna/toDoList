@@ -21,6 +21,7 @@
 		45797A3A2A7C487200E2391F /* AnxiousView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45797A392A7C487200E2391F /* AnxiousView.swift */; };
 		45797A3C2A7C48A700E2391F /* EmotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45797A3B2A7C48A700E2391F /* EmotionView.swift */; };
 		45797A3E2A7C540B00E2391F /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45797A3D2A7C540B00E2391F /* SliderView.swift */; };
+		45797A402A7D6C9500E2391F /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45797A3F2A7D6C9500E2391F /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		45797A392A7C487200E2391F /* AnxiousView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxiousView.swift; sourceTree = "<group>"; };
 		45797A3B2A7C48A700E2391F /* EmotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionView.swift; sourceTree = "<group>"; };
 		45797A3D2A7C540B00E2391F /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		45797A3F2A7D6C9500E2391F /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				455323F52A7AD3D400374AA0 /* toDoList.xcdatamodeld */,
 				45797A352A7C484800E2391F /* HomeView.swift */,
+				45797A3F2A7D6C9500E2391F /* SwiftUIView.swift */,
 				45797A3D2A7C540B00E2391F /* SliderView.swift */,
 				45797A372A7C485A00E2391F /* FirstView.swift */,
 				45797A392A7C487200E2391F /* AnxiousView.swift */,
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45797A402A7D6C9500E2391F /* SwiftUIView.swift in Sources */,
 				45797A3C2A7C48A700E2391F /* EmotionView.swift in Sources */,
 				455323CD2A797E9B00374AA0 /* newToDo.swift in Sources */,
 				455323F72A7AD3D400374AA0 /* toDoList.xcdatamodeld in Sources */,
